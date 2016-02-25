@@ -29,4 +29,4 @@ EXPOSE 60030
 
 WORKDIR /opt/hbase/bin
 ENV PATH=$PATH:/opt/hbase/bin
-CMD /opt/hbase/bin/start-hbase.sh
+CMD ["hbase", "master", "start"]
